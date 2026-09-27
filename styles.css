@@ -25,7 +25,8 @@ body {
 }
 a { color: var(--primary-light); text-decoration: none; }
 a:hover { text-decoration: underline; }
-img { max-width: 100%; display: block; }
+/* height:auto keeps the aspect ratio when max-width shrinks an image that has width/height attributes */
+img { max-width: 100%; height: auto; display: block; }
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
 
 /* Header */
