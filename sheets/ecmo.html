@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECMO Essentials | ICU Basics</title>
+<meta name="description" content="VA vs VV, the circuit, monitoring, troubleshooting and ECPR for CCRN, CMC, CSC and transport exams">
+<link rel="canonical" href="https://icubasics.com/sheets/ecmo.html">
+<meta property="og:title" content="ECMO Essentials | ICU Basics">
+<meta property="og:description" content="VA vs VV, the circuit, monitoring, troubleshooting and ECPR for CCRN, CMC, CSC and transport exams">
+<meta property="og:url" content="https://icubasics.com/sheets/ecmo.html">
+<meta name="apple-itunes-app" content="app-id=6809866200">
+<link rel="icon" href="https://icubasics.com/assets/favicon.png">
+<style>
+:root{--bg:#0B0F19;--card:#131927;--line:#1E293B;--text:#FFFFFF;--muted:#9CA3AF;--accent:#A78BFA;--accent-text:#0B0F19}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header.nav{border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;flex-wrap:wrap}
+header.nav a.home{color:var(--text);font-weight:800;text-decoration:none}
+header.nav nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;margin-left:14px}
+main{padding-block:28px 48px}
+.eyebrow{color:var(--accent);font-weight:700;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;margin:0}
+h1{font-size:clamp(28px,6vw,38px);line-height:1.12;margin:6px 0 6px;letter-spacing:-.4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 6px;font-size:17px}
+.meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+h2{font-size:20px;margin:30px 0 10px;text-wrap:balance}
+p,li{font-size:16px;color:var(--text)}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+.table{overflow-x:auto;margin:12px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-variant-numeric:tabular-nums}
+caption{caption-side:top;text-align:left;color:var(--muted);font-size:13px;padding:10px 12px 0}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-top:1px solid var(--line)}
+thead th{border-top:0;color:var(--muted);font-size:12.5px;letter-spacing:.4px;text-transform:uppercase}
+tbody th{font-weight:700}
+figure.strip{margin:14px 0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure.strip svg{display:block;width:100%;height:auto}
+figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
+.callout{margin:14px 0;padding:12px 14px;border-radius:12px;background:var(--card);border-left:4px solid var(--accent);font-size:15.5px}
+.callout.warning{border-left-color:#F87171}
+.callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.callout.warning b{color:#F87171}
+.cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
+.cta span{color:var(--muted);font-size:15px}
+.refs li{color:var(--muted);font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding:0;list-style:none}
+.cards a{display:block;height:100%;padding:14px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none}
+.cards a b{display:block;font-size:16.5px}
+.cards a span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{padding-block:18px}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="home" href="../">ICU Basics</a><nav><a href="./">One-Pagers</a><a href="../support.html">Support</a></nav></div></header>
+<main class="wrap">
+<p class="eyebrow">One-Pager</p>
+<h1>ECMO Essentials</h1>
+<p class="sub">VA vs VV, the circuit, monitoring, troubleshooting and ECPR for CCRN, CMC, CSC and transport exams</p>
+<p class="meta">Checked against current sources October 2026</p>
+<h2>VA vs VV at a glance</h2>
+<div class="table"><table><thead><tr><th scope="col">Feature</th><th scope="col">VV</th><th scope="col">VA</th></tr></thead><tbody><tr><th scope="row">Supports</th><td>Lungs only</td><td>Heart and lungs</td></tr><tr><th scope="row">Circuit vs heart</th><td>In series; native heart must pump</td><td>In parallel; bypasses heart and lungs</td></tr><tr><th scope="row">Typical use</th><td>ARDS P/F &lt;80 despite proning; pH &lt;7.25 + PaCO₂ ≥60</td><td>Refractory cardiogenic shock, ECPR, massive PE, poisoning</td></tr><tr><th scope="row">Cannulation</th><td>Fem + IJ, or dual-lumen RIJ</td><td>Fem-fem; axillary; central post-op</td></tr><tr><th scope="row">Usual SaO₂</th><td>Often 80–90%</td><td>Check right radial (femoral VA)</td></tr><tr><th scope="row">Contraindication</th><td>No exit plan (no recovery)</td><td>Severe AR; aortic dissection</td></tr></tbody></table></div>
+<aside class="callout tip"><b>Exam tip</b> Exam favorite: VV supports only the lungs; a failing heart needs inotropes or conversion to VA.</aside>
+<h2>The circuit and its controls</h2>
+<p>Drainage → pump → oxygenator (with heater) → return. Pre-pump tubing is under negative pressure: an open port pulls in air.</p>
+<div class="table"><table><thead><tr><th scope="col">Control</th><th scope="col">Main effect</th></tr></thead><tbody><tr><th scope="row">Blood flow (pump RPM)</th><td>Main oxygenation lever; on VA, also MAP</td></tr><tr><th scope="row">Sweep gas flow</th><td>CO₂ removal: more sweep, lower PaCO₂</td></tr><tr><th scope="row">FdO₂ (gas blender)</th><td>Post-oxygenator PO₂; lower on VA to avoid hyperoxia</td></tr></tbody></table></div>
+<aside class="callout tip"><b>Exam tip</b> Exams pair blood flow with O₂ and sweep with CO₂. Lower a high PaCO₂ slowly: a drop over 50% near cannulation is linked to brain injury.</aside>
+<h2>Monitoring and anticoagulation</h2>
+<ul><li>Drainage pressure more negative at same RPM = poor drainage; pump hemolysis beyond −300 mm Hg</li><li>Post-oxygenator PO₂ over 300 mm Hg on FdO₂ 1.0 = working membrane</li><li>VA: pulse pressure shows native ejection; drainage sat reflects SvO₂ (aim over 66%)</li><li>Limb NIRS over 50% (ideally 60%), under 20% side-to-side gap</li><li>VA wean signs: pulse pressure &gt;10, MAP &gt;65 at 2–2.5 L/min, minimal pressors</li></ul>
+<div class="table"><table><thead><tr><th scope="col">Lab</th><th scope="col">Exam value</th></tr></thead><tbody><tr><th scope="row">Anti-Xa on UFH</th><td>0.3–0.7 IU/mL</td></tr><tr><th scope="row">aPTT</th><td>About 60–90 s (center-specific)</td></tr><tr><th scope="row">Plasma free Hb</th><td>Under 10 mg/dL; over 50, find the cause</td></tr><tr><th scope="row">Other hemolysis clues</th><td>↑LDH, ↑indirect bilirubin, ↓haptoglobin, pink urine</td></tr></tbody></table></div>
+<p>UFH is usual; bivalirudin or argatroban if HIT. High free Hb, bilirubin or lipids falsely lower anti-Xa. Follow your institution's protocols.</p>
+<h2>Complications</h2>
+<div class="table"><table><thead><tr><th scope="col">Problem</th><th scope="col">Clues</th><th scope="col">Response</th></tr></thead><tbody><tr><th scope="row">Bleeding</th><td>Oozing, GI bleed, new neuro change</td><td>Pressure; hold or reduce heparin per protocol</td></tr><tr><th scope="row">Thrombosis</th><td>Circuit clots, ↑ΔP, ↑D-dimer</td><td>Flashlight checks; component change</td></tr><tr><th scope="row">Limb ischemia (VA)</th><td>Cool, pale leg; low NIRS</td><td>Distal perfusion cannula (6–8 Fr) at cannulation</td></tr><tr><th scope="row">North-South or Harlequin (femoral VA)</th><td>Low R-hand SpO₂, pink legs; heart better, lungs not</td><td>Optimize vent, then V-AV; VV once heart recovers</td></tr><tr><th scope="row">LV distension (VA)</th><td>Pulse pressure &lt;10, closed aortic valve, lung edema</td><td>Inotrope, less flow; IABP, Impella or septostomy vent</td></tr><tr><th scope="row">Air embolism</th><td>Bubbles, detector alarm</td><td>Stop pump, clamp near patient</td></tr></tbody></table></div>
+<aside class="callout warning"><b>Safety</b> Air or decannulation: stop the pump, clamp the lines near the patient, set emergency vent settings, call the ECMO team; press on bleeding sites. On VA, support stops and a stopped pump can flow backward: prepare for CPR and pressors.</aside>
+<h2>Troubleshooting</h2>
+<div class="table"><table><thead><tr><th scope="col">Finding</th><th scope="col">Likely cause</th><th scope="col">First moves (ECMO team)</th></tr></thead><tbody><tr><th scope="row">Chatter, falling flow</th><td>Hypovolemia, bleeding, tamponade, cannula position</td><td>Lower RPM, give volume, treat cause</td></tr><tr><th scope="row">Low post-oxygenator PO₂</th><td>Gas line off, blender error, failing membrane</td><td>Check gas connections; plan change-out</td></tr><tr><th scope="row">Rising ΔP (transmembrane pressure)</th><td>Clot if flow falls at same RPM; else check transducer</td><td>Trend flow; coags, free Hb</td></tr><tr><th scope="row">VV hypoxemia, good membrane</th><td>Recirculation, high CO, fever, agitation</td><td>Check pre-oxygenator sat; reposition; lower O₂ demand</td></tr><tr><th scope="row">Pink urine, ↑free Hb</th><td>Pump clot, high suction</td><td>Find and fix the source</td></tr></tbody></table></div>
+<aside class="callout tip"><b>Exam tip</b> Recirculation: bright red drainage blood, high pre-oxygenator saturation, and SaO₂ that falls as flow rises.</aside>
+<h2>Nursing care and transport</h2>
+<ul><li>Routine circuit checks: flows, pressures, sweep, FdO₂, flashlight</li><li>Cannulas secured in 2+ places; check sites; minimize punctures</li><li>Neuro checks every 1–4 h with pupils; distal pulses (Doppler), color, NIRS</li><li>Heater masks fever: watch WBC, hemodynamics and sites</li><li>VV lung rest: plateau ≤25 cm H₂O, PEEP ≥10, low rate</li><li>Transport: gas for the whole trip, backup power, hand crank, clamps</li><li>Pump and oxygenator at patient level; trace lines before, during and after moves; plan heat</li></ul>
+<h2>ECMO in CPR (ECPR)</h2>
+<ul><li>AHA (2a, 2023, still current): reasonable for refractory arrest in select patients within a trained, equipped system</li><li>AHA 2025: reasonable to set selection criteria, use experienced percutaneous cannulators, regionalize (2a); intra-arrest transport may be considered for highly selected OHCA (2b)</li><li>Better outcomes: bystander CPR, shockable rhythm, intermittent ROSC or signs of life, short low-flow time</li><li>Also 2a in 2025: pregnancy, PE, hypothermia, refractory poisoning, anaphylaxis, cath lab arrest</li><li>ELSO: consider after 10–15 min of failed CPR, cannulate after 10–20 min, flow within 60 min; CPR continues until flow ≥3 L/min</li><li>After ECPR: right-arm arterial line, SpO₂ 92–97%, MAP ≥60 but &lt;80; watch for LV distension</li></ul>
+<div class="cta"><a class="button" href="https://apps.apple.com/app/id6809866200">Get ICU Basics</a><span>Practice this with 2,400+ exam-style questions and rationales. Free on the App Store.</span></div>
+<h2>Sources</h2>
+<ol class="refs"><li>Tonna JE, Abrams D, Brodie D, et al. Management of Adult Patients Supported with Venovenous Extracorporeal Membrane Oxygenation (VV ECMO): Guideline from the Extracorporeal Life Support Organization (ELSO). ASAIO J. 2021;67(6):601-610. doi:10.1097/MAT.0000000000001432 <a href="https://www.elso.org/Portals/0/files/pdf/Management_of_Adult_Patients_Supported_with.1.pdf">Link</a></li><li>Lorusso R, Shekar K, MacLaren G, et al. ELSO Interim Guidelines for Venoarterial Extracorporeal Membrane Oxygenation in Adult Cardiac Patients. ASAIO J. 2021;67(8):827-844. doi:10.1097/MAT.0000000000001510 <a href="https://www.elso.org/Portals/0/files/pdf/ELSO_Interim_Guidelines_for_Venoarterial.2.pdf">Link</a></li><li>McMichael ABV, Ryerson LM, Ratano D, et al. 2021 ELSO Adult and Pediatric Anticoagulation Guidelines. ASAIO J. 2022;68(3):303-310. doi:10.1097/MAT.0000000000001652 <a href="https://www.elso.org/portals/0/files/pdf/2021_elso_adult_and_pediatric_anticoagulation.1.pdf">Link</a></li><li>Gajkowski EF, Herrera G, Hatton L, et al. ELSO Guidelines for Adult and Pediatric Extracorporeal Membrane Oxygenation Circuits. ASAIO J. 2022;68(2):133-152. doi:10.1097/MAT.0000000000001630 <a href="https://www.elso.org/Portals/0/files/pdf/ELSO_Guidelines_for_Adult_and_Pediatric_Membrane_Oxygenation_Circuits.pdf">Link</a></li><li>Extracorporeal Life Support Organization. ELSO Guidelines for all ECLS Cases (General Guidelines), Version 1.4. August 2017. <a href="https://www.elso.org/Portals/0/ELSO%20Guidelines%20General%20All%20ECLS%20Version%201_4.pdf">Link</a></li><li>Cho SM, Hwang J, Chiarini G, et al. Neurological Monitoring and Management for Adult Extracorporeal Membrane Oxygenation Patients: Extracorporeal Life Support Organization Consensus Guidelines. ASAIO J. 2024;70(12):e169-e181. doi:10.1097/MAT.0000000000002312 <a href="https://www.elso.org/Portals/0/files/pdf/mat-70-e169.pdf">Link</a></li><li>Richardson ASC, Tonna JE, Nanjayya V, et al. Extracorporeal Cardiopulmonary Resuscitation in Adults. Interim Guideline Consensus Statement From the Extracorporeal Life Support Organization. ASAIO J. 2021;67(3):221-228. doi:10.1097/MAT.0000000000001344 <a href="https://www.elso.org/Portals/0/files/pdf/Extracorporeal_Cardiopulmonary_Resuscitation_in.1.pdf">Link</a></li><li>Perman SM, Elmer J, Maciel CB, et al. 2023 American Heart Association Focused Update on Adult Advanced Cardiovascular Life Support. Circulation. 2024;149:e254-e273. doi:10.1161/CIR.0000000000001194 <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000001194">Link</a></li><li>Dezfulian C, Cabañas JG, Buckley JR, et al. Part 4: Systems of Care: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care. Circulation. 2025;152(16 Suppl 2):S353-S384. doi:10.1161/CIR.0000000000001378 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13003348/">Link</a></li><li>Cao D, Arens AM, Chow SL, et al. Part 10: Adult and Pediatric Special Circumstances of Resuscitation: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care. Circulation. 2025;152(16 Suppl 2):S578-S672. doi:10.1161/CIR.0000000000001380 <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation">Link</a></li><li>Wigginton JG, Agarwal S, Bartos JA, et al. Part 9: Adult Advanced Life Support: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care. Circulation. 2025;152(16 Suppl 2):S538-S577. doi:10.1161/CIR.0000000000001376 <a href="https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support">Link</a></li><li>Bünger V, Hunsicker O, Krannich A, et al. Potential of cell-free hemoglobin and haptoglobin as prognostic markers in patients with ARDS and treatment with veno-venous ECMO. J Intensive Care. 2023;11:15. doi:10.1186/s40560-023-00664-5 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10116665/">Link</a></li><li>Strong AE, Rudolph K, Denburg MR, Badheka A. Hemolysis Monitoring Practices during Extracorporeal Membrane Oxygenation: A Survey Report. Blood Purif. 2026;55(1):30-34 (epub 2025 Sep 16). doi:10.1159/000548469 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13100939/">Link</a></li><li>Labib A, August E, Agerstrand C, et al. Extracorporeal Life Support Organization Guideline for Transport and Retrieval of Adult and Pediatric Patients with ECMO Support. ASAIO J. 2022;68(4):447-455. doi:10.1097/MAT.0000000000001653 <a href="https://www.elso.org/Portals/0/files/pdf/Extracorporeal_Life_Support_Organization_Guideline.98055.pdf">Link</a></li></ol>
+</main>
+<footer><div class="wrap">For education and exam preparation only. Not medical advice; follow current guidelines and your institution’s protocols. ICU Basics is an independent study aid. It is not affiliated with, endorsed by, or sponsored by the American Association of Critical-Care Nurses (AACN), the AACN Certification Corporation, the American Heart Association (AHA), the National Board for Respiratory Care (NBRC), or the Board of Certification for Emergency Nursing (BCEN). CEN® is a registered trademark of BCEN. Exam names and trademarks belong to their respective owners.</div></footer>
+</body>
+</html>

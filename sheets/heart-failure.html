@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heart Failure | ICU Basics</title>
+<meta name="description" content="HFrEF vs HFpEF, stages, GDMT pillars, warm/cold profiles, shock and diuretics">
+<link rel="canonical" href="https://icubasics.com/sheets/heart-failure.html">
+<meta property="og:title" content="Heart Failure | ICU Basics">
+<meta property="og:description" content="HFrEF vs HFpEF, stages, GDMT pillars, warm/cold profiles, shock and diuretics">
+<meta property="og:url" content="https://icubasics.com/sheets/heart-failure.html">
+<meta name="apple-itunes-app" content="app-id=6809866200">
+<link rel="icon" href="https://icubasics.com/assets/favicon.png">
+<style>
+:root{--bg:#0B0F19;--card:#131927;--line:#1E293B;--text:#FFFFFF;--muted:#9CA3AF;--accent:#A78BFA;--accent-text:#0B0F19}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+header.nav{border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;flex-wrap:wrap}
+header.nav a.home{color:var(--text);font-weight:800;text-decoration:none}
+header.nav nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px;margin-left:14px}
+main{padding-block:28px 48px}
+.eyebrow{color:var(--accent);font-weight:700;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;margin:0}
+h1{font-size:clamp(28px,6vw,38px);line-height:1.12;margin:6px 0 6px;letter-spacing:-.4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 6px;font-size:17px}
+.meta{color:var(--muted);font-size:13px;margin:0 0 22px}
+h2{font-size:20px;margin:30px 0 10px;text-wrap:balance}
+p,li{font-size:16px;color:var(--text)}
+ul,ol{padding-left:22px}
+li{margin:4px 0}
+.table{overflow-x:auto;margin:12px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;font-variant-numeric:tabular-nums}
+caption{caption-side:top;text-align:left;color:var(--muted);font-size:13px;padding:10px 12px 0}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-top:1px solid var(--line)}
+thead th{border-top:0;color:var(--muted);font-size:12.5px;letter-spacing:.4px;text-transform:uppercase}
+tbody th{font-weight:700}
+figure.strip{margin:14px 0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure.strip svg{display:block;width:100%;height:auto}
+figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
+.callout{margin:14px 0;padding:12px 14px;border-radius:12px;background:var(--card);border-left:4px solid var(--accent);font-size:15.5px}
+.callout.warning{border-left-color:#F87171}
+.callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.callout.warning b{color:#F87171}
+.cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
+.cta span{color:var(--muted);font-size:15px}
+.refs li{color:var(--muted);font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding:0;list-style:none}
+.cards a{display:block;height:100%;padding:14px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none}
+.cards a b{display:block;font-size:16.5px}
+.cards a span{color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+footer .wrap{padding-block:18px}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="home" href="../">ICU Basics</a><nav><a href="./">One-Pagers</a><a href="../support.html">Support</a></nav></div></header>
+<main class="wrap">
+<p class="eyebrow">One-Pager</p>
+<h1>Heart Failure</h1>
+<p class="sub">HFrEF vs HFpEF, stages, GDMT pillars, warm/cold profiles, shock and diuretics</p>
+<p class="meta">Checked against current sources October 2026</p>
+<h2>Types, stages and NYHA class</h2>
+<div class="table"><table><caption>2022 AHA/ACC/HFSA cut-offs. Finerenone, a nonsteroidal MRA, is FDA-approved (2025) for LVEF ≥40%, not HFrEF.</caption><thead><tr><th scope="col">Type</th><th scope="col">LVEF</th><th scope="col">Exam point</th></tr></thead><tbody><tr><th scope="row">HFrEF</th><td>≤40%</td><td>Four pillars cut deaths</td></tr><tr><th scope="row">HFmrEF</th><td>41–49%</td><td>SGLT2i; MRA or ARNi may help</td></tr><tr><th scope="row">HFpEF</th><td>≥50%</td><td>SGLT2i; treat BP, AF, congestion</td></tr><tr><th scope="row">HFimpEF</th><td>Was ≤40%, now &gt;40%</td><td>Keep GDMT</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th scope="col">Stage</th><th scope="col">Meaning</th></tr></thead><tbody><tr><th scope="row">A</th><td>At risk (HTN, diabetes, obesity, CAD, cardiotoxins); no structural disease</td></tr><tr><th scope="row">B</th><td>Pre-HF: structural change or high BNP; never symptomatic</td></tr><tr><th scope="row">C</th><td>Structural disease with current or past symptoms</td></tr><tr><th scope="row">D</th><td>Advanced: marked symptoms, repeat admissions despite optimized GDMT</td></tr></tbody></table></div>
+<ul><li>NYHA I: no limits from HF</li><li>NYHA II: symptoms with ordinary activity</li><li>NYHA III: symptoms with less than ordinary activity</li><li>NYHA IV: symptoms at rest or with any activity</li></ul>
+<aside class="callout tip"><b>Exam tip</b> Stages never move backward: stage C stays C even when symptoms resolve. NYHA class can improve or worsen.</aside>
+<h2>Left vs right failure</h2>
+<div class="table"><table><thead><tr><th scope="col">Left-sided (lungs)</th><th scope="col">Right-sided (body)</th></tr></thead><tbody><tr><th scope="row">Dyspnea, orthopnea, PND, fatigue</th><td>JVD, hepatojugular reflux</td></tr><tr><th scope="row">Crackles, cough</th><td>Dependent pitting edema</td></tr><tr><th scope="row">S3 gallop</th><td>Hepatomegaly, ascites, early satiety</td></tr><tr><th scope="row">High PCWP</th><td>High CVP</td></tr></tbody></table></div>
+<p>Left-sided failure is the most common cause of right-sided failure. Obesity lowers BNP and NT-proBNP.</p>
+<h2>HFrEF: the four pillars</h2>
+<p>Start all four unless contraindicated; titrate per your institution's protocols. Diuretics ease congestion but are not a pillar.</p>
+<div class="table"><table><thead><tr><th scope="col">Pillar</th><th scope="col">Examples</th><th scope="col">Watch for</th></tr></thead><tbody><tr><th scope="row">ARNi (preferred), ACEi or ARB</th><td>Sacubitril-valsartan, lisinopril, losartan</td><td>Low BP, high K; 36 h ACEi washout before ARNi; no ARNi or ACEi after angioedema</td></tr><tr><th scope="row">Beta-blocker</th><td>Carvedilol, metoprolol succinate, bisoprolol</td><td>Bradycardia; not started on IV inotropes; never stop abruptly</td></tr><tr><th scope="row">MRA</th><td>Spironolactone, eplerenone</td><td>Start if eGFR &gt;30 and K &lt;5.0; stop if K stays ≥5.5</td></tr><tr><th scope="row">SGLT2i</th><td>Dapagliflozin, empagliflozin</td><td>No diabetes needed; genital infection, volume loss, euglycemic DKA; hold ≥3 days before surgery</td></tr></tbody></table></div>
+<p>ACEi dry cough: switch to an ARNi or ARB. Add hydralazine-isosorbide dinitrate for self-identified African American patients with NYHA III–IV symptoms despite optimal therapy.</p>
+<aside class="callout tip"><b>Exam tip</b> Only carvedilol, bisoprolol and metoprolol succinate are proven in HFrEF; metoprolol tartrate is not. Sacubitril-valsartan raises BNP but not NT-proBNP, so follow NT-proBNP.</aside>
+<h2>Decompensated HF and shock</h2>
+<p>Wet = congested (crackles, JVD, edema, weight gain). Cold = poorly perfused (cool skin, narrow pulse pressure, confusion, low urine output, rising lactate).</p>
+<div class="table"><table><thead><tr><th scope="col">Profile</th><th scope="col">Picture</th><th scope="col">Treatment focus</th></tr></thead><tbody><tr><th scope="row">Warm-dry</th><td>Compensated</td><td>Titrate oral GDMT</td></tr><tr><th scope="row">Warm-wet</th><td>Most common</td><td>IV loop diuretic; vasodilator (nitroglycerin, nitroprusside) if BP allows</td></tr><tr><th scope="row">Cold-wet</th><td>Worst outlook</td><td>Inotrope plus diuretic; MCS if failing</td></tr><tr><th scope="row">Cold-dry</th><td>Uncommon</td><td>Cautious fluids; inotrope if needed</td></tr></tbody></table></div>
+<p>Pulmonary edema: sit upright, give oxygen and an IV loop diuretic; track urine output, K, BP. Keep GDMT unless contraindicated (e.g., shock); hold or reduce the beta-blocker for marked overload or low output. Refractory congestion: ultrafiltration or CRRT.</p>
+<aside class="callout tip"><b>Exam tip</b> Milrinone (a PDE3 inhibitor) works despite beta-blockers. It vasodilates (watch BP) and needs a lower rate in renal impairment.</aside>
+<aside class="callout warning"><b>Safety</b> Cardiogenic shock: SBP &lt;90 mm Hg for &gt;30 min or pressors needed, plus hypoperfusion (urine &lt;30 mL/h, lactate &gt;2 mmol/L); typically CI &lt;2.2 and PCWP &gt;15. Revascularize if MI. Norepinephrine for hypotension, plus an inotrope (dobutamine or milrinone) for low output. Temporary MCS (e.g., Impella, VA-ECMO) if drugs fail; routine IABP or ECMO is not advised in MI shock.</aside>
+<h2>Diuretic monitoring</h2>
+<ul><li>Daily standing weight, same time; strict intake and output</li><li>Daily K, Mg, Na, BUN and creatinine while titrating</li><li>BP and orthostatic symptoms; avoid over-diuresis</li><li>Push usual IV furosemide doses (20–80 mg) over 1–2 min; infuse high doses no faster than 4 mg/min</li><li>Tinnitus or hearing loss: ototoxicity (rapid or high doses, renal failure, aminoglycosides)</li><li>Poor response: higher IV loop dose, or add metolazone (watch K, Na)</li><li>Small creatinine rise with good decongestion: not a reason to stop</li></ul>
+<p>IV loop doses often start at ≥2× the home oral dose, per your institution's protocols.</p>
+<aside class="callout warning"><b>Safety</b> Low K or Mg raises the risk of digoxin toxicity. MRAs and ACEi/ARB/ARNi raise K; check labs before giving.</aside>
+<h2>Patient teaching</h2>
+<ul><li>Weigh each morning after voiding, before eating, same scale</li><li>Report a gain of 2–3 lb in a day or 5 lb in a week, or new dyspnea or swelling</li><li>Limit sodium (processed, canned, restaurant food); often 1,500–2,300 mg/day</li><li>Restrict fluids only if prescribed</li><li>Take GDMT daily even when well; never stop a beta-blocker suddenly</li><li>Avoid NSAIDs and potassium salt substitutes</li><li>Take the diuretic early in the day; rise slowly; stay active</li></ul>
+<div class="cta"><a class="button" href="https://apps.apple.com/app/id6809866200">Get ICU Basics</a><span>Practice this with 2,400+ exam-style questions and rationales. Free on the App Store.</span></div>
+<h2>Sources</h2>
+<ol class="refs"><li>Heidenreich PA, Bozkurt B, Aguilar D, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation. 2022;145(18):e895–e1032 (co-published J Card Fail. 2022;28(5):e1–e167, doi:10.1016/j.cardfail.2022.02.010). <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063">Link</a></li><li>American College of Cardiology. 2022 AHA/ACC/HFSA Heart Failure Guideline: Key Perspectives (Ten Points to Remember). 2022. <a href="https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2022/03/29/19/53/2022-aha-acc-hfsa-heart-failure-guideline-gl-hf">Link</a></li><li>ENTRESTO (sacubitril and valsartan) prescribing information. Novartis. Revised April 2024. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/207620s025,218591s000lbl.pdf">Link</a></li><li>FARXIGA (dapagliflozin) prescribing information, DailyMed. Revised September 2026. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=ef9e9c8c-5460-4193-952a-0c249dd071bd">Link</a></li><li>JARDIANCE (empagliflozin) prescribing information. Boehringer Ingelheim. Revised October 2025. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/204629s063lbl.pdf">Link</a></li><li>Furosemide Injection, USP prescribing information (Hikma Pharmaceuticals USA). Revised 10/2024. <a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/018267s029lbl.pdf">Link</a></li><li>Safiullah Z, Hollenberg SM. Cardiogenic Shock and Mechanical Circulatory Support: Year in Review 2025. American College of Cardiology. August 2026. <a href="https://www.acc.org/latest-in-cardiology/articles/2026/08/03/15/28/cardiogenic-shock-and-mechanical-circulatory-support">Link</a></li><li>Erdem S, Patel DA, Abou Zeid K, Aoun J. Temporary Mechanical Circulatory Support for Acute Myocardial Infarction Cardiogenic Shock. Methodist DeBakey Cardiovasc J. 2025. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12352399">Link</a></li><li>Bloom JE, Chan W, Kaye DM, Stub D. State of Shock: Contemporary Vasopressor and Inotrope Use in Cardiogenic Shock. J Am Heart Assoc. 2023. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10492962/">Link</a></li><li>Bhardwaj A, Hillerson D, Narang N, et al. Evolving Evidence-Driven Strategies in Cardiogenic Shock Management. JACC: Advances. 2026. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13595213/">Link</a></li><li>Mangini S, Pires PV, Braga FGM, Bacal F. Decompensated heart failure. Einstein (São Paulo). 2013;11(3):383–391. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4878602/">Link</a></li><li>OpenStax. Medical-Surgical Nursing, 12.3 Heart Failure. 2024. <a href="https://openstax.org/books/medical-surgical-nursing/pages/12-3-heart-failure">Link</a></li><li>Merck Manual Professional Version. Pulmonary Edema. Full review and last update October 2025. <a href="https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/pulmonary-edema">Link</a></li><li>Merck Manual Professional Version. Chronic Heart Failure. Full review October 2025; last updated July 2026. <a href="https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/chronic-heart-failure">Link</a></li><li>Merck Manual Professional Version. Right Heart Failure and Cor Pulmonale. Updated October 2025. <a href="https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/right-heart-failure-and-cor-pulmonale">Link</a></li><li>Milrinone Lactate Injection prescribing information, DailyMed. Revised June 2026. <a href="https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=0fdaee3c-2144-4ca7-9868-54d251f468c0">Link</a></li><li>LANOXIN (digoxin) tablets prescribing information, DailyMed (Advanz Pharma). Revised December 2024. <a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d91e3646-4c63-4512-ab22-db39c085c4dc">Link</a></li><li>MedlinePlus Medical Encyclopedia. Heart failure – fluids and diuretics. Updated July 2024. <a href="https://medlineplus.gov/ency/patientinstructions/000112.htm">Link</a></li><li>MedlinePlus Drug Information. Spironolactone. <a href="https://medlineplus.gov/druginfo/meds/a682627.html">Link</a></li><li>TCTMD. FDA Approves Finerenone for HF Patients With Mildly Reduced or Preserved EF. July 2025. <a href="https://www.tctmd.com/news/fda-approves-finerenone-hf-patients-mildly-reduced-or-preserved-ef">Link</a></li><li>American College of Cardiology. Updated ACC Expert Consensus Decision Pathway Addresses Management of HFpEF (journal scan). July 2026. <a href="https://www.acc.org/latest-in-cardiology/journal-scans/2026/07/22/17/25/updated-acc-ecdp-addresses-management-of-hfpef">Link</a></li><li>Cardiac Interventions Today. ACC Expert Consensus Decision Pathway for Managing In-Patient HF Published. August 2024. <a href="https://citoday.com/news/acc-expert-consensus-decision-pathway-for-managing-in-patient-hf-published">Link</a></li><li>European Society of Cardiology. 2026 ESC Guidelines for the management of heart failure (congress news). August 2026. <a href="https://www.escardio.org/news/news-room/congress-news/2026-esc-guidelines-for-the-management-of-heart-failure/">Link</a></li><li>AJMC. 5 Things to Know About the 2026 ESC Heart Failure Guidelines. September 2026. <a href="https://www.ajmc.com/view/5-things-to-know-about-the-2026-esc-heart-failure-guidelines">Link</a></li><li>TCTMD. Second Universal Definition of HF Focuses on Phenotypes and Etiology. July 2026. <a href="https://www.tctmd.com/news/second-universal-definition-hf-focuses-phenotypes-and-etiology">Link</a></li><li>TCTMD. SODIUM-HF: No Impact of Tighter Dietary Salt Restriction on Death or Hospitalization. April 2022. <a href="https://www.tctmd.com/news/sodium-hf-no-impact-tighter-dietary-salt-restriction-death-or-hospitalization">Link</a></li></ol>
+</main>
+<footer><div class="wrap">For education and exam preparation only. Not medical advice; follow current guidelines and your institution’s protocols. ICU Basics is an independent study aid. It is not affiliated with, endorsed by, or sponsored by the American Association of Critical-Care Nurses (AACN), the AACN Certification Corporation, the American Heart Association (AHA), the National Board for Respiratory Care (NBRC), or the Board of Certification for Emergency Nursing (BCEN). CEN® is a registered trademark of BCEN. Exam names and trademarks belong to their respective owners.</div></footer>
+</body>
+</html>
