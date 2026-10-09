@@ -43,6 +43,10 @@ figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
 .callout.warning{border-left-color:#F87171}
 .callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .callout.warning b{color:#F87171}
+.download{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.download a.button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:15px;text-decoration:none;padding:9px 14px;border-radius:10px}
+.download a.button::before{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat}
+.download span{color:var(--muted);font-size:14px}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
 .cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
 .cta span{color:var(--muted);font-size:15px}
@@ -62,6 +66,7 @@ footer .wrap{padding-block:18px}
 <h1>Sepsis and Septic Shock Bundle</h1>
 <p class="sub">Sepsis-3 definitions, the Hour-1 bundle and SSC 2026 changes for exam review</p>
 <p class="meta">Checked against current sources October 2026</p>
+<p class="download"><a class="button" href="sepsis-bundle.pdf" download>Download one-page PDF</a><span>Letter landscape, ready to print or keep with your notes</span></p>
 <h2>Definitions and screening</h2>
 <div class="table"><table><thead><tr><th scope="col">Term</th><th scope="col">Exam definition</th></tr></thead><tbody><tr><th scope="row">Sepsis</th><td>Suspected or confirmed infection plus acute SOFA rise ≥2</td></tr><tr><th scope="row">Septic shock</th><td>Pressor for MAP ≥65 plus lactate &gt;2 mmol/L (18 mg/dL) after adequate fluids</td></tr><tr><th scope="row">qSOFA (2 of 3)</th><td>RR ≥22, altered mentation, SBP ≤100</td></tr><tr><th scope="row">SIRS (2 or more)</th><td>T &gt;38 or &lt;36 °C; HR &gt;90; RR &gt;20 or PaCO2 &lt;32; WBC &gt;12K, &lt;4K or &gt;10% bands</td></tr></tbody></table></div>
 <aside class="callout tip"><b>Exam tip</b> qSOFA predicts a poor outcome but does not diagnose sepsis. SSC 2026 strongly prefers NEWS, NEWS2, MEWS or SIRS over qSOFA as a single screening tool.</aside>

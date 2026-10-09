@@ -43,6 +43,10 @@ figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
 .callout.warning{border-left-color:#F87171}
 .callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .callout.warning b{color:#F87171}
+.download{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.download a.button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:15px;text-decoration:none;padding:9px 14px;border-radius:10px}
+.download a.button::before{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat}
+.download span{color:var(--muted);font-size:14px}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
 .cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
 .cta span{color:var(--muted);font-size:15px}
@@ -62,6 +66,7 @@ footer .wrap{padding-block:18px}
 <h1>ACS and STEMI</h1>
 <p class="sub">Territories, time goals, first drugs and complications</p>
 <p class="meta">Checked against current sources October 2026</p>
+<p class="download"><a class="button" href="acs-stemi.pdf" download>Download one-page PDF</a><span>Letter landscape, ready to print or keep with your notes</span></p>
 <h2>ACS spectrum and STEMI criteria</h2>
 <div class="table"><table><thead><tr><th scope="col">Type</th><th scope="col">Troponin</th><th scope="col">ECG</th></tr></thead><tbody><tr><th scope="row">Unstable angina</th><td>Not elevated</td><td>Normal or ST-T changes</td></tr><tr><th scope="row">NSTEMI</th><td>Rise/fall above 99th percentile</td><td>No ST elevation</td></tr><tr><th scope="row">STEMI</th><td>Rises; never wait for it</td><td>New ST elevation</td></tr></tbody></table></div>
 <ul><li>ST elevation ≥1 mm in 2 contiguous leads; V2-V3: ≥2 mm men 40+, ≥2.5 mm men under 40, ≥1.5 mm women</li><li>ST depression in V1-V3: get V7-V9; ≥0.5 mm elevation = posterior STEMI</li><li>Inferior STEMI: get V4R; ≥0.5 mm elevation = RV involvement</li></ul>

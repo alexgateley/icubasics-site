@@ -43,6 +43,10 @@ figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
 .callout.warning{border-left-color:#F87171}
 .callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .callout.warning b{color:#F87171}
+.download{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.download a.button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:15px;text-decoration:none;padding:9px 14px;border-radius:10px}
+.download a.button::before{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat}
+.download span{color:var(--muted);font-size:14px}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
 .cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
 .cta span{color:var(--muted);font-size:15px}
@@ -62,6 +66,7 @@ footer .wrap{padding-block:18px}
 <h1>CCRN (Adult) Exam Guide</h1>
 <p class="sub">Format, the November 2025 test plan, eligibility and an 8-week study plan</p>
 <p class="meta">Checked against current sources October 2026</p>
+<p class="download"><a class="button" href="guide-ccrn-adult.pdf" download>Download one-page PDF</a><span>Letter landscape, ready to print or keep with your notes</span></p>
 <h2>The exam at a glance</h2>
 <div class="table"><table><thead><tr><th scope="col">Feature</th><th scope="col">CCRN (Adult)</th></tr></thead><tbody><tr><th scope="row">Items</th><td>150: 125 scored, 25 unscored pretest</td></tr><tr><th scope="row">Time</th><td>3 hours (about 72 seconds per item)</td></tr><tr><th scope="row">Item type</th><td>Multiple choice, 4 options, one answer</td></tr><tr><th scope="row">Format</th><td>Fixed length, not adaptive; bookmark and go back</td></tr><tr><th scope="row">Passing standard</th><td>83 of 125 scored items (since 11/12/2025)</td></tr><tr><th scope="row">Pass rate</th><td>72.02% first-time in 2025 (mostly the previous exam)</td></tr><tr><th scope="row">Fee</th><td>$260 member, $375 nonmember</td></tr><tr><th scope="row">Retest</th><td>$185 member, $290 nonmember; up to 4 tries in 12 months</td></tr><tr><th scope="row">Where</th><td>PSI testing center or live remote proctoring</td></tr><tr><th scope="row">Results</th><td>On screen; emailed report by content area</td></tr></tbody></table></div>
 <aside class="callout tip"><b>Exam tip</b> The cut score is a raw count that can change with exam updates. Treat every item as scored. Most items test application and analysis, not recall.</aside>

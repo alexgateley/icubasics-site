@@ -43,6 +43,10 @@ figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
 .callout.warning{border-left-color:#F87171}
 .callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .callout.warning b{color:#F87171}
+.download{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.download a.button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:15px;text-decoration:none;padding:9px 14px;border-radius:10px}
+.download a.button::before{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat}
+.download span{color:var(--muted);font-size:14px}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
 .cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
 .cta span{color:var(--muted);font-size:15px}
@@ -62,6 +66,7 @@ footer .wrap{padding-block:18px}
 <h1>CEN Exam Guide</h1>
 <p class="sub">BCEN Certified Emergency Nurse: format, the July 2026 outline, eligibility and an 8-week plan</p>
 <p class="meta">Checked against current sources October 2026</p>
+<p class="download"><a class="button" href="guide-cen.pdf" download>Download one-page PDF</a><span>Letter landscape, ready to print or keep with your notes</span></p>
 <h2>The exam at a glance</h2>
 <div class="table"><table><thead><tr><th scope="col">Feature</th><th scope="col">CEN</th></tr></thead><tbody><tr><th scope="row">Questions</th><td>175: 150 scored, 25 unscored pretest</td></tr><tr><th scope="row">Time</th><td>3 hours of seat time; 5 practice items to learn the software</td></tr><tr><th scope="row">Item type</th><td>Multiple choice, 4 options, one best answer</td></tr><tr><th scope="row">Format</th><td>Fixed length, not adaptive</td></tr><tr><th scope="row">Passing standard</th><td>99 of 150 scored items correct</td></tr><tr><th scope="row">Cost</th><td>$380; ENA member $285; military $195</td></tr><tr><th scope="row">Retest</th><td>Unlimited, 90 days apart; $200 within 1 year</td></tr><tr><th scope="row">Test Assurance</th><td>$450 ($355 ENA, $265 military); covers a second attempt</td></tr><tr><th scope="row">Where</th><td>PSI test center or Live Remote Proctoring, within your 90-day window</td></tr><tr><th scope="row">Results</th><td>Pass/fail at once, scores by domain</td></tr><tr><th scope="row">Credential</th><td>Valid 4 years</td></tr></tbody></table></div>
 <aside class="callout tip"><b>Exam tip</b> You score one point per right answer and lose nothing for a wrong guess, so answer every item. BCEN does not say which 25 items are pretest, so treat each one as scored. Allow about 1 minute per item.</aside>

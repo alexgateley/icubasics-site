@@ -43,6 +43,10 @@ figure.strip figcaption{padding:10px 12px;color:var(--muted);font-size:14.5px}
 .callout.warning{border-left-color:#F87171}
 .callout b{display:block;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .callout.warning b{color:#F87171}
+.download{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 22px}
+.download a.button{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:15px;text-decoration:none;padding:9px 14px;border-radius:10px}
+.download a.button::before{content:"";width:14px;height:14px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12m0 0-5-5m5 5 5-5M5 21h14'/%3E%3C/svg%3E") center/contain no-repeat}
+.download span{color:var(--muted);font-size:14px}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:34px 0 8px;padding:16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
 .cta a.button{background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:10px 16px;border-radius:10px}
 .cta span{color:var(--muted);font-size:15px}
@@ -62,6 +66,7 @@ footer .wrap{padding-block:18px}
 <h1>Blood Products and Transfusion</h1>
 <p class="sub">Components, triggers, compatibility, reactions, massive transfusion, reversal</p>
 <p class="meta">Checked against current sources October 2026</p>
+<p class="download"><a class="button" href="blood-products.pdf" download>Download one-page PDF</a><span>Letter landscape, ready to print or keep with your notes</span></p>
 <h2>Products at a glance</h2>
 <div class="table"><table><thead><tr><th scope="col">Product</th><th scope="col">Contains / effect</th><th scope="col">Typical use</th></tr></thead><tbody><tr><th scope="row">PRBCs</th><td>1 unit raises Hgb about 1 g/dL</td><td>Symptomatic anemia, hemorrhage</td></tr><tr><th scope="row">Plasma (FFP)</th><td>All clotting factors; 10 to 15 mL/kg</td><td>Bleeding with many factors low, massive transfusion, TTP</td></tr><tr><th scope="row">Platelets</th><td>1 apheresis unit raises count 30,000 to 60,000/µL</td><td>Low count or dysfunction with bleeding or procedures</td></tr><tr><th scope="row">Cryo</th><td>Fibrinogen, factors VIII and XIII, vWF</td><td>Bleeding with fibrinogen below 100 to 150 mg/dL</td></tr><tr><th scope="row">Albumin 5% or 25%</th><td>Protein; no clotting factors</td><td>Volume; 25% after paracentesis over 5 L</td></tr><tr><th scope="row">4F-PCC</th><td>Factors II, VII, IX, X; proteins C and S</td><td>Fast warfarin reversal, small volume</td></tr></tbody></table></div>
 <p>Plasma is not for volume or an INR of 1.7 or less.</p>
