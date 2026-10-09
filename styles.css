@@ -147,3 +147,8 @@ footer .legal { margin-top: 14px; max-width: 760px; font-size: 13px; }
   .grid, .exams, .shots { grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; }
 }
+
+/* Coming-soon store badges (not links until the apps are live) */
+.btn.store.soon { cursor: default; opacity: 0.92; }
+.btn.store.soon:hover { background: #000; }
+.store-row { display: flex; flex-wrap: wrap; gap: 12px; }
